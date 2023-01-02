@@ -188,6 +188,8 @@ body {
     position: relative;
 }
 
+
+
 /*  FOOTER   */
 
 .container-footer{
@@ -229,6 +231,10 @@ body {
   
     .description {
       display: none;
+    }
+
+    .product:hover .description {
+        display: block;
     }
 }
   
