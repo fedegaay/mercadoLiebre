@@ -183,6 +183,25 @@ body {
 .relative {
     position: relative;
 }
+
+/*  FOOTER   */
+
+.container-footer{
+    padding: 10px;  
+}
+
+.icono-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #03264C;
+    margin-bottom: 10px;
+}
+
+.text-footer{
+    text-align: center;
+}
   
 @media (min-width: 481px) {
     /* tablet */
