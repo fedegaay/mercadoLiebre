@@ -56,6 +56,10 @@ body {
 .title {
     font-size: 24px;
 }
+
+.texto-oculto{
+    display: none;
+}
   
 .nav-link {
     text-decoration: none;
@@ -207,6 +211,9 @@ body {
     /* tablet */
     .md-w-50 {
       width: 48%;
+    }
+    .texto-oculto{
+        display: block;
     }
 }
   
