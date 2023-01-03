@@ -237,27 +237,31 @@ body {
     .container-nav{
         display: flex;
         width: 100%;
+        box-sizing: border-box;
     }
 
     .primer-nav{
         display: flex;
         width: 50%;
         justify-content: flex-start;
-    }
-
-    .nav-1{
-        margin-left: 20px;
-    }
-
-    .nav-2{
-        margin-right: 20px;
+        box-sizing: border-box;
     }
 
     .segundo-nav{
         display: flex;
         width: 50%;
         justify-content: flex-end;
+        box-sizing: border-box;
     }
+
+    .nav-1{
+        margin-left: 3%;
+    }
+
+    .nav-2{
+        margin-right: 3%;
+    }
+
     
 }
   
