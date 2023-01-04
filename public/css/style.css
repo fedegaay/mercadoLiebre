@@ -332,7 +332,7 @@ body {
     .container-nav{
         display: flex;
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: content-box;
     }
 
     .primer-nav{
@@ -340,7 +340,6 @@ body {
         width: 50%;
         justify-content: flex-start;
         box-sizing: border-box;
-        justify-content: space-between;
     }
 
     .segundo-nav{
@@ -391,6 +390,34 @@ body {
     .product:hover{
          box-shadow: 0px 0px 10px #646464;
          transition: box-shadow, 500ms;
+    }
+
+    .container-nav{
+        display: flex;
+        width: 100%;
+        box-sizing: content-box;
+    }
+
+    .primer-nav{
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
+        box-sizing: border-box;
+    }
+
+    .segundo-nav{
+        display: flex;
+        width: 50%;
+        justify-content: flex-end;
+        box-sizing: content-box;
+    }
+
+    .nav-1{
+        margin-left: 3%;
+    }
+
+    .nav-2{
+        margin-right: 3%;
     }
 }
   
