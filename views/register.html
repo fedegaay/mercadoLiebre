@@ -14,7 +14,7 @@
     <body class="bg-grey">
         <header class="bg-yellow p-1 flex flex-wrap">
             <h1 class="w-50">
-                <a href="/"><img src="/img/logo-ml.svg" alt="Mercado Liebre" /></a>
+                <a href="/"><img src="/img/logo-ml.svg" alt="Mercado Liebre" class="img"/></a>
             </h1>
             <div class="p-2 w-50 align-center">
                 <form action="/" class="p-1 flex radius-1 bg-white">
@@ -50,31 +50,79 @@
                 <i class="fa-solid fa-bars p-1 bg-blue radius-1 color-white bold"></i>
             </div>
         </header>
-        <img class="w-100" src="/img/banner.png" alt="Promociones"/>
-
-
-
-        
-        <footer>
-            <div class="container-footer">
-                <i class="fa-solid fa-credit-card icono-footer"></i>
-                <h3 class="text-footer">Paga con tarjeta o en efectivo</h3>
-                <p class="text-footer">Con Mercado Liebre Cash, tenes cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        <img class="w-100 img-banner" src="/img/banner.png" alt="Promociones"/>
+        <main>
+            <h1 class="title text-title">Registra tu cuenta:</h1>
+            <form action="/" class="container-form">
+                <div>
+                    <input type="text" class="form-input" placeholder="Ingrese nombre y apellido: " required>
+                </div>
+                <div>
+                    <input type="text" class="form-input separacion" placeholder="Ingrese nombre de usuario" minlength="6" maxlength="20" required>
+                </div>
+                <div>
+                    <label for="fecha" class="texto-form">Selecciona fecha de nacimiento:</label>
+                    <input type="date" class="form-input" name="fecha" id="fecha" required>
+                </div>
+                <div>
+                    <input type="text" class="form-input separacion" placeholder="Ingrese su domicilio" required>
+                </div>
+                <div class="separacion">
+                    <label class="texto-form perfil-form separacion">Perfil de usuario:</label>
+                    <input type="checkbox" class="check-input" name="comorador" id="comprador" checked><label for="comprador">Comprador</label>
+                    <input type="checkbox" class="check-input" name="vendedor" id="vendedor"><label for="vendedor">Vendedor</label>
+                </div>
+                <div class="separacion">
+                    <label class="texto-form perfil-form separacion">Categorias de interes:</label>
+                    <div class="check-block">
+                        <input type="checkbox" class="check-input" name="hogar" id="hogar" checked><label for="hogar">Hogar</label>
+                    </div>
+                    <div class="check-block">
+                        <input type="checkbox" class="check-input" name="electro" id="electro" ><label for="electro">Electro</label>
+                    </div>
+                    <div class="check-block">
+                        <input type="checkbox" class="check-input" name="moda" id="moda" ><label for="moda">Moda</label>
+                    </div>
+                    <div class="check-block">
+                        <input type="checkbox" class="check-input" name="jugueteria" id="jugueteria" ><label for="jugueteria">Jugueteria</label>
+                    </div>
+                    <div class="check-block">
+                        <input type="checkbox" class="check-input" name="vida" id="vida" ><label for="vida">Vida Sana</label>
+                    </div>  
+                </div>
+                <div>
+                    <label for="archivo" class="texto-form perfil-form separacion">Seleccione foto de perfil:</label>
+                    <input type="file" name="archivo" id="archivo" class="form-input" required>
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" class="form-input separacion" required>
+                </div>
+                <div>
+                    <button type="submit" class="btn-register">Enviar</button>
+                    <button type="reset" class="btn-register">Reestablecer</button>
+                </div>
+            </form>
+        </main>
+        <footer class="">
+            <div class="footer-contenedor">
+                <div class="container-footer">
+                    <i class="fa-solid fa-credit-card icono-footer"></i>
+                    <h3 class="text-footer">Paga con tarjeta o en efectivo</h3>
+                    <p class="text-footer">Con Mercado Liebre Cash, tenes cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+                </div>
+                <div class="container-footer">
+                    <i class="fa-solid fa-gift icono-footer"></i>
+                    <h3 class="text-footer">Envío gratis desde $ 2.500</h3>
+                    <p class="text-footer">Solo por estar registrad@ en Mercado Liebre tenes envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.</p>
+                </div>
+                <div class="container-footer">
+                    <i class="fa-solid fa-user-shield icono-footer"></i>
+                    <h3 class="text-footer">Seguridad, de principio a fin</h3>
+                    <p class="text-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
+                </div>
             </div>
-            <div class="container-footer">
-                <i class="fa-solid fa-gift icono-footer"></i>
-                <h3 class="text-footer">Envío gratis desde $ 2.500</h3>
-                <p class="text-footer">Solo por estar registrad@ en Mercado Liebre tenes envíos gratis en miles de
-                    productos. Es un beneficio de Mercado Puntos.</p>
-            </div>
-            <div class="container-footer">
-                <i class="fa-solid fa-user-shield icono-footer"></i>
-                <h3 class="text-footer">Seguridad, de principio a fin</h3>
-                <p class="text-footer">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegido.</p>
-            </div>
-            <div class="container-footer">
-                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-            </div>
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </footer>
   </body>
 </html>
